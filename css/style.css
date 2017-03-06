@@ -220,7 +220,10 @@ footer p {
   color: #fff;
   font-weight: 600;
 }
-.hide {
+.hide1 {
+  display: none;
+}
+.hide2 {
   display: none;
 }
 
