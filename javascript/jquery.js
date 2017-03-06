@@ -1,15 +1,23 @@
 $(document).ready(function() {
     
-    console.log('am i here');
     $('.readmore').click(function(){
         event.preventDefault();
         console.log('i clicked read more');
-        $('#show-this-on-click').slideDown();
+        $('.hide').slideDown(800);
+        $('.readmore').hide();
     });
 
     $('.readless').click(function() {
         event.preventDefault();
         console.log('i clicked read less');
-        $('#show-this-on-click').slideUp();
+        $('.hide').slideUp(800);
+        $('.readmore').show();
+    });
+
+    $('.learnmore').click(function() {
+        event.preventDefault();
+        console.log('i clicked learnmore');
+        $('#learnmoretext').slideDown(800);
+        $('.learnmore').hide();
     })
 });
